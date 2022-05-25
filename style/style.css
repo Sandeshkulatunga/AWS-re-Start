@@ -345,6 +345,14 @@ iframe{
         background-size: cover;
     }
 
+    .section-1-p4{
+        line-height: normal;
+    }
+
+    .section-1-p5{
+        line-height: normal;
+    }
+
     .card-row-1, .card-row-2{
         margin-top: 2rem;
     }
@@ -362,6 +370,14 @@ iframe{
     }
 
     iframe{
-        width: 200px !important;
+        width: 90vw !important;
+    }
+
+    .footer-img{
+        display: none;
+    }
+
+    .copyrights{
+        font-size: 10px;
     }
 }
