@@ -360,4 +360,8 @@ iframe{
         justify-content: center;
         margin: auto;
     }
+
+    iframe{
+        width: 200px !important;
+    }
 }
