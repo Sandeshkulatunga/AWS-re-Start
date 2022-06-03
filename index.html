@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style/bootstrap.min.css">
       <!-- local CSS -->
     <link rel="stylesheet" href="style/style.css">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
 
     <title>AWS re/Start</title>
     <link rel="shortcut icon" href="assetes/logo.jpg" type="image/x-icon">
@@ -17,7 +19,7 @@
 
     <!--navbar start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand navbar-logo" href="https://headstart.lk/" target="_blank"><img src="asset/index/Headstart.svg" alt="" srcset="" class="navbar-img"></a>
+      <!-- <a class="navbar-brand navbar-logo" href="https://headstart.lk/" target="_blank"><img src="asset/index/Headstart.svg" alt="" srcset="" class="navbar-img"></a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,9 +58,10 @@
     <!--section-1 start-->
     <div class="section-1 container-fluid">
       <div class="row">
-        <div class="section-1-left col-md-6 col-sm-12"></div>
-        <div class="section-1-right col-md-6 col-sm-12">
+        <div class="section-1-left col-lg-6"></div>
+        <div class="section-1-right col-lg-6">
           <div class="section-1-detail">
+            <img src="asset/index/Headstart.svg" alt="" srcset="" class="navbar-img d-block mb-4">
             <img src="asset/index/AWS_Restart_Logo_RGB.svg" alt="" srcset="">
             <h1 class="section-1-h1">AWS re/Start program</h1>
             <p class="section-1-p2">AWS cloud and IT fundamental training</p>
@@ -163,7 +166,10 @@
       <div class="container section-5-container">
         <h1 class="section-5-heading">What is cloud computing?</h1>
         <p class="section-5-p1">This is a question that we hear from learners – here’s a video resource that you can embed or link to so that they understand what it is!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5ty9KoF3cAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container video-container text-center m-0 p-0">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5ty9KoF3cAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
       </div>
     </div>
     <!--section-5 end-->
@@ -174,20 +180,25 @@
         <h1 class="section-6-heading">What skills will I learn?</h1>
         <p class="section-6-p1">Through hands-on interactive sessions, you’ll learn technical, behavioral and mindset skills to prepare you to launch a career in the cloud.</p>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 ">
             <h4 class="section-6-left-heading">Technical skills -</h4>
-            <li>How cloud computing works</li>
-            <li>AWS Cloud skills</li>
-            <li>How to use different programing languages</li>
-            <li>Build skills aligned with AWS Certification <br>&#160;&#160;&#160;&#160;&#160;you’ll prepare for the AWS Certified Cloud </li>
-            <li>Practitioner Certification</li>
+            <ul>
+              <li><span>How cloud computing works</span></li>
+              <li><span>AWS Cloud skills</span></li>
+              <li><span>How to use different programing languages</span></li> 
+              <li><span>Build skills aligned with AWS Certification you’ll prepare for the AWS Certified Cloud</span></li>
+              <li><span>Practitioner Certification</span></li>
+            </ul>
+
           </div>
           <div class="col-md-6">
             <h4 class="section-6-right-heading">Behavior & Mindset skills -</h4>
-            <li>Effective communication</li>
-            <li>Problem solving</li>
-            <li>Teamwork</li>
-            <li>Time management</li>
+            <ul>
+              <li>Effective communication</li>
+              <li>Problem solving</li>
+              <li>Teamwork</li>
+              <li>Time management</li>
+            </ul>
           </div>
       </div>
       </div>
@@ -197,12 +208,19 @@
     <!--section-7 start-->
     <div class="section-7-container container">
       <h1 class="section-7-heading">Requirements?</h1>
-      <li>Not being a full-time student or an employee</li>
-      <li>Age 19 and above</li>
-      <li>Working knowedge in English</li>
-      <li>Resident of Sri Lanka</li>
-      <li>Access to a computer and the internet</li>
-      <li>Authorized to work in Sri Lanka</li>
+      <div class="row">
+        <div class="container requirement-detail d-block">
+          <ul>
+            <li>Not being a full-time student or an employee</li>
+            <li>Age 19 and above</li>
+            <li>Working knowedge in English</li>
+            <li>Resident of Sri Lanka</li>
+            <li>Access to a computer and the internet</li>
+            <li>Authorized to work in Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
     <!--section-7 end-->
 
@@ -226,6 +244,7 @@
 
     <!-- Optional JavaScript -->
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/69cf268868.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
