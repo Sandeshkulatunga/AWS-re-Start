@@ -26,15 +26,36 @@ html{
     width:6rem;
     font-size: 
     1rem;
-    border-radius: 2rem;
+    border-radius: 0.2rem;
 }
 
 /* .navbar-logo{
     width: 10% !important;
 } */
 
+.navbar{
+    background-color: rgb(250, 252, 255);
+}
+
+.nav-link{
+    color: #212121;
+}
+
+.nav-link:hover{
+    color: #FE9A29 !important;
+}
+
 .navbar-logo img{
     width: 100%;
+}
+
+.modal-dialog{
+   background-color: #000;
+   border: none;
+}
+
+.modal-content{
+    background-color: #E1F5FE;
 }
 
 

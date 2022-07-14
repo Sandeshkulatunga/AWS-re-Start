@@ -15,43 +15,79 @@
     <title>Hello, world!</title>
   </head>
   <body>
-     <!--navbar start-->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <a class="navbar-brand navbar-logo" href="https://headstart.lk/" target="_blank"><img src="asset/index/Headstart.svg" alt="" srcset="" class="navbar-img"></a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="for-applicants.html">For Applicants</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">For Partners</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="for-company.html">For Company</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Headstart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <a class="btn btn-login" type="submit">Login</a>
-          </ul>
+
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <a class="navbar-brand navbar-logo" href="https://headstart.lk/" target="_blank"><img src="asset/index/Headstart.svg" alt="" srcset="" class="navbar-img"></a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="for-applicants.html">For Applicants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">For Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="for-company.html">For Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://headstart.lk/" target="_blank">About Headstart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <a class="btn btn-login" type="submit">Login</a>
+        </ul>
+      </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--modal start-->
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
-      </nav>
-      <!--navbar end-->
+      </div>
+    </div>
+    <!--modal end-->
 
       <!--section-15 start-->
           <div class="section-15 container-fluid">
