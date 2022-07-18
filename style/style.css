@@ -37,8 +37,12 @@ html{
     background-color: rgb(250, 252, 255);
 }
 
-.nav-link{
-    color: #212121;
+.nav-item{
+    color: #212121 !important;
+}
+
+.nav-item.activate{
+    color: #FE9A29 !important;
 }
 
 .nav-link:hover{
@@ -57,7 +61,6 @@ html{
 .modal-content{
     background-color: #E1F5FE;
 }
-
 
 .section-1{
     width:100% ;
@@ -111,6 +114,20 @@ html{
     color:var(--blueColor);
 }
 
+.box{
+    transform: translateX(-200%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(200%);
+    transition: transform 0.4s ease;
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
 .section-2-p1{
     margin-bottom: 2%;
     text-justify: auto;
@@ -148,6 +165,11 @@ html{
 
 .cards .card-title{
     font-size: 3rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index:2;
 }
 
 .card-row-1 .card:nth-child(1) .card-title{
@@ -215,9 +237,12 @@ iframe{
 }
 
 .section-6{
+    display: flex;
     margin-top: 10%;
     padding-bottom: 2%;
     background-color:var(--backgroundColor);
+    align-content: center;
+    justify-content: center;
 }
 
 .section-6-left-heading, .section-6-right-heading{
@@ -238,6 +263,18 @@ iframe{
 
 .section-7-container li{
     color: var(--grayColor);
+}
+
+.card-section-6{
+    width: 100%;
+    min-height: 24rem;
+}
+
+.card-section-6 i{
+   color: var(--yellowColor);
+   padding-top: 5%;
+   font-size: 6rem;
+   padding-bottom: 10%;
 }
 
 .footer{
