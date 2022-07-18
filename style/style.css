@@ -37,14 +37,6 @@ html{
     background-color: rgb(250, 252, 255);
 }
 
-.nav-item{
-    color: #212121 !important;
-}
-
-.nav-item.activate{
-    color: #FE9A29 !important;
-}
-
 .nav-link:hover{
     color: #FE9A29 !important;
 }
@@ -114,7 +106,7 @@ html{
     color:var(--blueColor);
 }
 
-.box{
+/* .box{
     transform: translateX(-200%);
     transition: transform 0.4s ease;
 }
@@ -126,7 +118,7 @@ html{
 
 .box.show{
     transform: translateX(0);
-}
+} */
 
 .section-2-p1{
     margin-bottom: 2%;
@@ -167,6 +159,9 @@ html{
     font-size: 3rem;
 }
 
+.card{
+    transition: transform 15ms ease-in-out;
+}
 .card:hover{
     transform: scale(1.1);
     z-index:2;
