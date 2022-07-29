@@ -45,6 +45,10 @@ html{
     width: 100%;
 }
 
+.navbar-img{
+    width: 25%;
+}
+
 .modal-dialog{
    background-color: #000;
    border: none;
@@ -55,14 +59,15 @@ html{
 }
 
 .section-1{
-    width:100% ;
-    background-color:var(--backgroundColor);
+    width:100%;
+    background-image: url(../asset/index/banner.jpg);
+    background-size: cover;
 }
 
 .section-1-left{
     width:100%;
     height:92vh;
-    background-image: url(../asset/index/banner.svg);
+    background-image: url(../asset/index/banner.jpg);
     background-size: cover;
 }
 
@@ -71,7 +76,12 @@ html{
 }
 
 .section-1-detail{
-    padding-top: 10%;
+    margin: auto;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-1-h1{
@@ -79,13 +89,13 @@ html{
 }
 
 .section-1-p2{
-    color:var(--blueColor);
+    color:white;
     font-size: 1.45rem;
     padding-bottom:4%;
 }
 
 .section-1-p3{
-    color:var(--blueColor);
+    color:white;
     font-size:1.5rem;
     font-weight: 500;
     padding-bottom:0.5rem;
@@ -93,8 +103,9 @@ html{
 }
 
 .section-1-p4, .section-1-p5{
-    color:var(--grayColor);
-    line-height:0.4em;
+    color: #ececec;
+    font-size: large;
+    /* line-height:0.4em; */
 }
 
 .section-2{
@@ -106,7 +117,7 @@ html{
     color:var(--blueColor);
 }
 
-/* .box{
+.box{
     transform: translateX(-200%);
     transition: transform 0.4s ease;
 }
@@ -118,7 +129,7 @@ html{
 
 .box.show{
     transform: translateX(0);
-} */
+}
 
 .section-2-p1{
     margin-bottom: 2%;
@@ -142,11 +153,16 @@ html{
 }
 
 .section-4{
-    background-color: var(--backgroundColor);
+    background-image: linear-gradient(to right, #090979 , #00d4ff);
     margin-top: 10%;
 }
 
-.section-4-heading, .section-5-heading, .section-6-heading, .section-7-heading{
+.section-4-heading, .section-6-heading{
+    padding-top: 4%;
+    color: white;
+}
+
+.section-5-heading, .section-7-heading{
     padding-top: 2%;
     color:var(--blueColor);
 }
@@ -208,19 +224,26 @@ html{
 }
 
 .card{
+    background: rgb(255, 255, 255);
     width: 16rem;
     text-align: center;
     border: none;
     border-radius:1rem;
-    box-shadow: 6px 4px 4px #dcdcdc;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .section-5{
     margin-top: 10%;
 }
 
-.section-5-p1, .section-6-p1{
+.section-5-p1{
     color:var(--grayColor);
+    margin-bottom: 5%;
+    font-size: 0.95rem;
+}
+
+.section-6-p1{
+    color:white;
     margin-bottom: 5%;
     font-size: 0.95rem;
 }
@@ -235,7 +258,7 @@ iframe{
     display: flex;
     margin-top: 10%;
     padding-bottom: 2%;
-    background-color:var(--backgroundColor);
+    background-image: linear-gradient(to right, #090979 , #00d4ff);
     align-content: center;
     justify-content: center;
 }
@@ -320,8 +343,20 @@ iframe{
 @media (max-width:1200px) {
 
     .section-1-p3{
-        color:var(--blueColor);
+        color:white;
         line-height: 1em;
+    }
+
+    .box{
+        transform: translateX(0);
+    }
+    
+    .box:nth-of-type(even){
+        transform: translateX(0);
+    }
+    
+    .box.show{
+        transform: translateX(0);
     }
 }
 
@@ -342,6 +377,18 @@ iframe{
 
     .section-1-detail{
         padding-top: 1%;
+    }
+
+    .box{
+        transform: translateX(0);
+    }
+    
+    .box:nth-of-type(even){
+        transform: translateX(0);
+    }
+    
+    .box.show{
+        transform: translateX(0);
     }
 
         /*for-company*/
@@ -392,18 +439,22 @@ iframe{
         margin: auto;
     }
 
+    .card{
+        margin:0% !important;
+    }
+
     .card-row-1, .card-row-2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 2rem !important;
         margin-right: 7%;
     }
 
     .cards{
         display: flex;
         justify-content: center;
-        padding-bottom: 5%;
+        padding-bottom: 8%;
         margin: auto;
     }
 
@@ -421,6 +472,18 @@ iframe{
 
     .section-1-detail{
         padding-top: 5%;
+    }
+
+    .box{
+        transform: translateX(0);
+    }
+    
+    .box:nth-of-type(even){
+        transform: translateX(0);
+    }
+    
+    .box.show{
+        transform: translateX(0);
     }
 
     /*for-company*/
@@ -461,6 +524,7 @@ iframe{
         flex-direction: column;
         justify-content: center;
         justify-content: center;
+        padding: 0;
     }
 
     .section-4-container{
@@ -488,6 +552,18 @@ iframe{
 
     .footer-heading{
         padding-bottom: 2%;
+    }
+
+    .box{
+        transform: translateX(0);
+    }
+    
+    .box:nth-of-type(even){
+        transform: translateX(0);
+    }
+    
+    .box.show{
+        transform: translateX(0);
     }
 
     .copyrights{
@@ -527,7 +603,11 @@ iframe{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 3rem;
+        padding: 0;
+    }
+
+    .card-row-1, .card-row-2{
+        margin-top: 2rem;
     }
 
     .card{
@@ -547,6 +627,18 @@ iframe{
         padding-left: 8%;
     }
 
+    .box{
+        transform: translateX(0);
+    }
+    
+    .box:nth-of-type(even){
+        transform: translateX(0);
+    }
+    
+    .box.show{
+        transform: translateX(0);
+    }
+
     .footer{
         margin-bottom: 0%;
         padding-bottom: 0%;
@@ -563,7 +655,8 @@ iframe{
 
 .section-8{
     width:100% ;
-    background-color:var(--backgroundColor);
+    background-image: url(../asset/index/banner.jpg);
+    background-size:  cover
 }
 
 .section-8-detail{
@@ -572,7 +665,7 @@ iframe{
 }
 
 .section-8-h1{
-    color: #172D43;
+    color: white;
    font-size: 2rem;
    
 }
@@ -738,10 +831,15 @@ iframe{
 
 .section-15{
     width:100% ;
-    background-color:var(--backgroundColor);
+    background-image: url(../asset/index/banner.jpg);
+    background-size: cover;
 }
 
-.section-15-h1, .section-16-h1, .section-16-h2 {
+.section-15-h1{
+    color: white;
+}
+
+.section-16-h1, .section-16-h2 {
     color: var(--blueColor);
 }
 
@@ -768,7 +866,8 @@ iframe{
 
 .section-17{
     width:100%;
-    background-color:var(--backgroundColor);
+    background-image: url(../asset/index/banner.jpg);
+    background-size: cover;
 }
 
 .section-17-detail{
@@ -777,7 +876,7 @@ iframe{
 }
 
 .section-17-h1{
-    color:var(--blueColor)
+    color:white;
 }
 
 .section-17-p{
