@@ -137,6 +137,14 @@ html{
     color:var(--grayColor);
 }
 
+.aws_detail{
+    background-color: var(--yellowColor);
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+}
+
 .section-3{
     margin-top: 10%;
 }
@@ -429,7 +437,13 @@ iframe{
         line-height: normal;
     }
 
-    .section-4-heading, .section-5-heading, .section-6-heading, .section-7-heading{
+    .section-4-heading{
+        font-size: 1.5rem;
+        padding-top: 2%;
+        color:white;
+    }
+
+    .section-5-heading, .section-6-heading, .section-7-heading{
         font-size: 1.5rem;
         padding-top: 2%;
         color:var(--blueColor);
