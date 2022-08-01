@@ -60,24 +60,22 @@ html{
 
 .section-1{
     width:100%;
-    background-image: url(../asset/index/banner.jpg);
-    background-size: cover;
 }
 
 .section-1-left{
     width:100%;
     height:92vh;
-    background-image: url(../asset/index/banner.jpg);
+    background-image: url(../asset/index/bnnerNew-01.svg);
     background-size: cover;
 }
 
 .section-1-right{
+    background-color:#06044A;
     width:100%;
 }
 
 .section-1-detail{
     margin: auto;
-    padding-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,10 +94,9 @@ html{
 
 .section-1-p3{
     color:white;
-    font-size:1.5rem;
+    font-size:1.2rem;
     font-weight: 500;
     padding-bottom:0.5rem;
-    line-height: 0.5em;
 }
 
 .section-1-p4, .section-1-p5{
@@ -185,10 +182,6 @@ html{
 
 .card{
     transition: transform 15ms ease-in-out;
-}
-.card:hover{
-    transform: scale(1.1);
-    z-index:2;
 }
 
 .card-row-1 .card:nth-child(1) .card-title{
@@ -376,6 +369,11 @@ iframe{
         display: none;
     }
 
+    .section-1-p3{
+        color:white;
+        line-height: 1em;
+    }
+
     .section-1-right{
         background-image: url(../asset/index/banner_576.svg);
         background-repeat: no-repeat;
@@ -426,7 +424,7 @@ iframe{
 
     .section-1-detail{
         padding-top: 8%;
-        padding-left: 10%;
+        /* padding-left: 10%; */
     }
 
     .section-1-detail img{
@@ -452,10 +450,6 @@ iframe{
     .section-4-container{
         margin: auto;
         padding-bottom: 4%;
-    }
-
-    .card{
-        margin:0% !important;
     }
 
     .card-row-1, .card-row-2{
@@ -603,6 +597,7 @@ iframe{
     .section-11 p{
         line-height: normal !important;
     }
+
 }
 
 @media (max-width:480px) {
@@ -669,6 +664,11 @@ iframe{
         .section-11{
             line-height: normal !important;
         }
+
+            /*for applicants*/
+    .section-19-cards{
+        margin-bottom: 2% !important;
+    }
 }
 
 
@@ -676,7 +676,7 @@ iframe{
 
 .section-8{
     width:100% ;
-    background-image: url(../asset/index/banner.jpg);
+    background-color: #06044A;
     background-size:  cover
 }
 
@@ -852,8 +852,7 @@ iframe{
 
 .section-15{
     width:100% ;
-    background-image: url(../asset/index/banner.jpg);
-    background-size: cover;
+    background-color: #06044A;
 }
 
 .section-15-h1{
@@ -887,7 +886,7 @@ iframe{
 
 .section-17{
     width:100%;
-    background-image: url(../asset/index/banner.jpg);
+    background-color: #06044A;
     background-size: cover;
 }
 
