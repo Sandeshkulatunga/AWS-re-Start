@@ -437,13 +437,13 @@ iframe{
         line-height: normal;
     }
 
-    .section-4-heading{
+    .section-4-heading, .section-6-heading{
         font-size: 1.5rem;
         padding-top: 2%;
         color:white;
     }
 
-    .section-5-heading, .section-6-heading, .section-7-heading{
+    .section-5-heading, .section-7-heading{
         font-size: 1.5rem;
         padding-top: 2%;
         color:var(--blueColor);
@@ -451,6 +451,7 @@ iframe{
 
     .section-4-container{
         margin: auto;
+        padding-bottom: 4%;
     }
 
     .card{
@@ -500,6 +501,10 @@ iframe{
         transform: translateX(0);
     }
 
+    .tech-card-1{
+        padding-bottom: 4%;
+    }
+
     /*for-company*/
     .section-10 p{
         line-height: normal !important;
@@ -544,6 +549,7 @@ iframe{
     .section-4-container{
         justify-content: center;
         margin: auto;
+        padding-bottom: 2%;
     }
 
     iframe{
@@ -607,6 +613,7 @@ iframe{
     .section-4-container{
         margin: 0%;
         padding: 0%;
+        padding-bottom: 2%;
         display: flex;
         flex-direction: column;
         justify-content: center;
