@@ -264,6 +264,17 @@ iframe{
     justify-content: center;
 }
 
+.tech-cards{
+    gap: 5%;
+}
+
+.card-section-6{
+    background-color: white;
+    min-height: 20rem;
+    border-radius:1rem;
+    text-align: center;
+}
+
 .section-6-left-heading, .section-6-right-heading{
     color:var(--yellowColor);
 }
@@ -301,6 +312,7 @@ iframe{
     height: auto;
     margin-top: 5%;
     background-color:#172D43;
+    padding-bottom: .1vh;
 }
 
 .footer-details{
@@ -402,6 +414,10 @@ iframe{
             line-height: normal !important;
         }
 
+        .tech-card-1{
+            padding-bottom: 2%;
+        }
+
 }
 
 
@@ -495,7 +511,7 @@ iframe{
         transform: translateX(0);
     }
 
-    .tech-card-1{
+    .tech-card-1, .tech-card-1 {
         padding-bottom: 4%;
     }
 
@@ -865,7 +881,7 @@ iframe{
 
 .section-16-p1, .section-16-p3{
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .section-16-p2{
@@ -904,12 +920,12 @@ iframe{
 }
 
 .section-18-h1{
+    padding-bottom: 3%;
     color: var(--blueColor);
 }
 
 .section-18-p1{
     color: var(--blueColor);
-    padding-bottom: 3%;
 }
 
 .section-19-heading {
