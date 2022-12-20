@@ -18,3 +18,12 @@ function checkboxs(){
     })
     
 }
+
+
+const navs = document.querySelectorAll('.nav');
+
+navs.forEach(nav =>{
+    nav.addEventListener('click', ()=>{
+        nav.classList.add('active');
+    })
+})
